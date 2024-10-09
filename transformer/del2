@@ -1,0 +1,11 @@
+2022-03-01 18:54:26,329 INFO     J: 0
+2022-03-01 18:54:27,119 INFO     neu {'emotion': 'neu', 'vad': [3.0, 2.5, 3.0]}
+2022-03-01 18:54:27,120 INFO     [0.25174303 0.12823705 0.39292829 0.22709163]
+2022-03-01 18:55:01,273 INFO     tensor([0.2494, 0.2906, 0.2576, 0.2024], device='cuda:0')
+2022-03-01 18:55:01,277 INFO     No of classes 4 
+2022-03-01 18:55:02,717 INFO     Train shape (4016,), Dev shape (474,), test shape: (474,) 
+2022-03-01 18:55:02,718 INFO     Starting Training Epoch 0 
+2022-03-01 18:55:47,491 INFO     ---- TRAIN ----
+2022-03-01 18:55:47,492 INFO     tensor(1743, device='cuda:0')
+2022-03-01 18:55:47,492 INFO     class_loss {1.146}, total_loss {1.146}, Time: {44.773} s
+2022-03-01 18:55:47,493 INFO     Training  class_acc: 0.434

@@ -1,0 +1,32 @@
+program: main2.py 
+method: bayes
+metric:
+  name: loss
+  goal: minimize
+parameters:
+  learning_rate:
+    values: [0.001, 0.01, 0.003]
+  momentum:
+    values: [0.1, 0.2, 0.3, 0.8, 0.95]
+  optimizer:
+    values: ["adam", "sgd"]
+command:
+  - ${env}
+  - python
+  - ${program}
+  - "--parallel"
+  - "--batchsize"
+  - "6"
+  - "--modalities"
+  - "a_phfeatspace_aligned"
+  - "--model_type"
+  - "transformer"
+  - "--encoder_module"
+  - "conformer"
+  - "--logfile"
+  - "transformer-bs6-a_phfeatspace_aligned-conformer-conv-sweep-3" 
+  - "--epochs"
+  - "50" 
+  - "--test_speaker"
+  - "3"
+  - ${args}
